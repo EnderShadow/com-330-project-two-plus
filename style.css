@@ -1,0 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Begin site styles... */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em; /* 18px / 16px */
+  line-height: 1.222em; /* 22px / 18px */
+  padding: 1.222em 1.8333em; /* 22px / 18px and 150% of that */
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 0.334em; /* 18px / 18px */
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.22222222em; /* 40px / 18px */
+  line-height: 1em; /* 27px / 27px */
+}
+
+h2 {
+  font-size: 1.5em; /* 27px / 18px */
+  line-height: 1em; /* 27px / 27px */
+  padding-bottom: 0.666em;
+}
+
+p {
+  padding-bottom: 1.222em; /* 22px / 18px */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
+.g body { position: relative; }
+
+.g body::after { background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(136, 136, 136, 1)" /></svg>') repeat top left; content: ""; display: block; pointer-events: none; top: 0; right: 0; bottom: 0; left: 0; z-index: 9999; position: absolute; }
+
+.g body:active::after { display: none; }
