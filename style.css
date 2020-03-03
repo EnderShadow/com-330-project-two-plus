@@ -44,6 +44,35 @@ img {
   max-width: 100%;
 }
 
+#about-me {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+
+.photo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.222em
+}
+
+@media only screen and (min-width: 900px) {
+  #about-me figure {
+    flex: 1 0 30%;
+    min-width: 30%;
+  }
+  #about-me article {
+    flex: 1 0 50%;
+    min-width: 50%;
+  }
+}
+
+.photo figcaption {
+  padding-top: 0.6111em;
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body { position: relative; }
 
