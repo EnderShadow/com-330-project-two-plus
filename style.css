@@ -68,10 +68,33 @@ img {
   margin-bottom: 1.222em /* 22px / 18px */
 }
 
+.project-img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem 1rem;
+}
+
 #projects a {
   display: block;
-  color: inherit;
+  color: #eee;
+  background: #222;
   text-decoration: none;
+  padding: 0.6111em;
+}
+
+#projects h4 {
+  text-align: center;
+  padding-bottom: 0.6111em;
+}
+
+#projects p {
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 900px) { /* Switch to using dual columns for the header */
