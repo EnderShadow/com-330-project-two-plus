@@ -57,7 +57,6 @@ img {
 #about-me {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
   column-gap: 20px;
 }
 
@@ -99,7 +98,7 @@ img {
 
 @media only screen and (min-width: 900px) { /* Switch to using dual columns for the header */
   #about-me figure {
-    flex: 1 0 30%;
+    flex: .1 0 30%;
     min-width: 30%;
   }
   #about-me article {
