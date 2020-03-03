@@ -35,6 +35,16 @@ h2 {
   padding-bottom: 0.666em;
 }
 
+h3 {
+  font-size: 1.5em; /* 27px / 18px */
+  line-height: 1em; /* 27px / 27px */
+  padding-bottom: 0.666em;
+}
+
+h4 {
+  font-weight: bold;
+}
+
 p {
   padding-bottom: 1.222em; /* 22px / 18px */
 }
@@ -56,6 +66,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.222em /* 22px / 18px */
+}
+
+#projects a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) { /* Switch to using dual columns for the header */
