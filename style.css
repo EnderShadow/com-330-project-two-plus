@@ -87,12 +87,16 @@ img {
   padding: 0.6111em;
 }
 
-#projects h4 {
+#projects a:hover {
+  background: #444;
+}
+
+#projects a h4 {
   text-align: center;
   padding-bottom: 0.6111em;
 }
 
-#projects p {
+#projects a p {
   padding-bottom: 0;
 }
 
