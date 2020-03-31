@@ -29,6 +29,12 @@ h1 {
   line-height: 1em; /* 27px / 27px */
 }
 
+.tagline {
+  font-size: 1.5em; /* 27px / 18px */
+  line-height: 1em; /* 27px / 27px */
+  padding-bottom: 0.666em;
+}
+
 h2 {
   font-size: 1.5em; /* 27px / 18px */
   line-height: 1em; /* 27px / 27px */
@@ -36,12 +42,6 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em; /* 27px / 18px */
-  line-height: 1em; /* 27px / 27px */
-  padding-bottom: 0.666em;
-}
-
-h4 {
   font-weight: bold;
 }
 
