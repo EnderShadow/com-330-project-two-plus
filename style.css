@@ -60,6 +60,10 @@ img {
   column-gap: 20px;
 }
 
+#about-me article {
+  flex: 1 0 50%;
+}
+
 .photo {
   margin-left: auto;
   margin-right: auto;
@@ -72,7 +76,7 @@ img {
   margin-right: auto;
 }
 
-#projects {
+#projects article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem 1rem;
@@ -86,7 +90,7 @@ img {
   padding: 0.6111em;
 }
 
-#projects a:hover {
+#projects a:hover, #projects a:active, #projects a:focus {
   background: #444;
 }
 
@@ -105,10 +109,6 @@ img {
 
 .info a {
   color: #03d3fc;
-}
-
-#about-me article {
-  flex: 1 0 50%;
 }
 
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
