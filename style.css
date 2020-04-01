@@ -18,6 +18,40 @@ body {
   color: #ddd;
 }
 
+.nav a {
+  display: block;
+  color: #eee;
+  background: #222;
+  text-decoration: none;
+  line-height: 0;
+  padding: 1em;
+  margin-bottom: 0.222em;
+}
+
+.nav a:hover, .nav a:active, .nav a:focus {
+  background: #444;
+}
+
+@media only screen and (min-width: 300px) {
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 0.666em;
+    margin-left: -0.181em;
+  }
+
+  .nav li {
+    flex: 1 0 auto;
+  }
+
+  .nav a {
+    line-height: inherit;
+    padding: 0.6111em;
+    margin-bottom: 0;
+    margin-left: 0.181em;
+  }
+}
+
 header {
   text-align: center;
   padding-bottom: 0.334em; /* 18px / 18px */
