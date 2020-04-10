@@ -7,11 +7,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles... */
 
 :root {
-  --main-bg-color: #333;
-  --secondary-bg-color: #222;
-  --hover-color: #444;
-  --main-fg-color: #ddd;
-  --secondary-fg-color: #eee;
+  --main-bg-color: #13293d;
+  --secondary-bg-color: #006494;
+  --tertiary-bg-color: #1f4366;
+  --hover-color: #247ba0;
+  --main-fg-color: #e8f1f2;
 }
 
 html {
@@ -34,7 +34,7 @@ body {
 
 .nav a {
   display: block;
-  color: var(--secondary-fg-color);
+  color: var(--main-fg-color);
   background: var(--secondary-bg-color);
   text-decoration: none;
   line-height: 0;
@@ -177,7 +177,7 @@ img {
 
 #projects a {
   display: block;
-  color: var(--secondary-fg-color);
+  color: var(--main-fg-color);
   background: var(--secondary-bg-color);
   text-decoration: none;
   padding: 0.6111em;
@@ -221,7 +221,7 @@ img {
 
 #contact-page footer a {
   display: inline-block;
-  color: var(--secondary-fg-color);
+  color: var(--main-fg-color);
   text-decoration: none;
   margin-top: 0.666em;
   margin-right: 0.666em;
