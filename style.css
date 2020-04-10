@@ -103,6 +103,10 @@ p {
   padding-bottom: 1.222em; /* 22px / 18px */
 }
 
+p:last-child {
+  padding-bottom: 0em;
+}
+
 img {
   display: block;
   max-width: 100%;
