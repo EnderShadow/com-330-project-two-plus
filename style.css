@@ -32,7 +32,8 @@ body {
   background: #444;
 }
 
-@media only screen and (min-width: 300px) {
+/* Must change min-width to fit all elements */
+@media only screen and (min-width: 400px) {
   .nav {
     display: flex;
     flex-flow: row nowrap;
@@ -94,8 +95,8 @@ img {
   column-gap: 20px;
 }
 
-#about-me article {
-  flex: 1 0 50%;
+#about-me section {
+  flex: 1 0 26%;
 }
 
 .photo {
