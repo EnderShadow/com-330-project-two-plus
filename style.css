@@ -53,6 +53,25 @@ body {
   }
 }
 
+@supports(display: grid) {
+  .nav {
+    display: grid;
+    /* Must change the first argument of minmax to fit largest item */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 0.222em 0.222em;
+    margin-left: 0;
+    margin-bottom: 1.222em;
+  }
+
+  .nav a {
+    /* override both flex and non-flex settings */
+    line-height: inherit;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0.5em;
+  }
+}
+
 header {
   text-align: center;
   padding-bottom: 0.334em; /* 18px / 18px */
