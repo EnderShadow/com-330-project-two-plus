@@ -11,10 +11,16 @@ html {
   font-size: 1.125em; /* 18px / 16px */
   line-height: 1.222em; /* 22px / 18px */
   padding: 1.222em 1.8333em; /* 22px / 18px and 150% of that */
+  min-height: 100%; /* Fixes repeating background issue on short pages on large screens */
 }
 
 body {
   background-color: #333;
+  background: repeating-linear-gradient(
+    -45deg,
+    #333 0 10px,
+    #222 10px 20px
+  );
   color: #ddd;
 }
 
