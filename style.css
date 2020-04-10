@@ -115,12 +115,18 @@ img {
 #about-me {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 20px;
 }
 
 #about-me section {
   flex: 1 0 26%;
 }
+
+
+#about-me figure {
+  /* used instead of column-gap in #about-me due to lack of support in most browsers */
+  margin-right: 20px;
+}
+
 
 .photo {
   margin-left: auto;
