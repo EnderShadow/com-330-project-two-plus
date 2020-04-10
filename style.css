@@ -114,11 +114,11 @@ h3 {
 }
 
 p {
-  padding-bottom: 1.222em; /* 22px / 18px */
+  margin-bottom: 1.222em; /* 22px / 18px */
 }
 
 p:last-child {
-  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 img {
@@ -193,7 +193,7 @@ img {
 }
 
 #projects a p {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 #resume article {
