@@ -7,7 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles... */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18px / 16px */
   line-height: 1.222em; /* 22px / 18px */
   padding: 1.222em 1.8333em; /* 22px / 18px and 150% of that */
