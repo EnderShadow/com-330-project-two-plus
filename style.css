@@ -132,8 +132,23 @@ img {
 
 #projects div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* initial minimum width of project cards for 200px screens */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem 1rem;
+}
+
+@media only screen and (min-width: 280px) {
+  #projects div {
+    /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 370px) {
+  #projects div {
+    /* final minimum width of project cards for 370px+ screens */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 #projects a {
