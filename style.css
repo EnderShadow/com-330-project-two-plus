@@ -8,8 +8,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 :root {
   --main-bg-color: #13293d;
-  --secondary-bg-color: #006494;
-  --tertiary-bg-color: #1f4366;
+  --link-box-bg-color: #006494;
+  --text-box-bg-color: #1f4366;
   --hover-color: #247ba0;
   --main-fg-color: #e8f1f2;
 }
@@ -35,7 +35,7 @@ body {
 .nav a {
   display: block;
   color: var(--main-fg-color);
-  background: var(--secondary-bg-color);
+  background: var(--link-box-bg-color);
   text-decoration: none;
   line-height: 0;
   padding: 1em;
@@ -142,7 +142,7 @@ img {
 }
 
 #about-me p {
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--text-box-bg-color);
   padding: 0.666em;
 }
 
@@ -182,7 +182,7 @@ img {
 #projects a {
   display: block;
   color: var(--main-fg-color);
-  background: var(--secondary-bg-color);
+  background: var(--link-box-bg-color);
   text-decoration: none;
   padding: 0.6111em;
 }
@@ -214,14 +214,14 @@ img {
 }
 
 #resume #education p {
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--text-box-bg-color);
   padding: 0.666em;
   margin-top: 0.666em;
 }
 
 #resume div {
   display: inline-block;
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--text-box-bg-color);
   padding: 0.666em;
   margin-top: 0.666em;
   margin-bottom: 0.666em;
@@ -229,7 +229,7 @@ img {
 
 #resume #skills ul {
   display: inline-block;
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--text-box-bg-color);
   padding: 0.666em;
   margin-top: 0.666em;
 }
@@ -240,7 +240,7 @@ img {
 
 #contact ul {
   display: inline-block;
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--text-box-bg-color);
   padding: 0.666em;
 }
 
