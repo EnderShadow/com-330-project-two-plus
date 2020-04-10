@@ -8,6 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 :root {
   --main-bg-color: #13293d;
+  --secondary-bg-color: #17324c;
   --link-box-bg-color: #006494;
   --text-box-bg-color: #1f4366;
   --hover-color: #247ba0;
@@ -24,11 +25,11 @@ html {
 
 body {
   background-color: var(--main-bg-color);
-  /*background: repeating-linear-gradient(
+  background: repeating-linear-gradient(
     -45deg,
     var(--main-bg-color) 0 10px,
     var(--secondary-bg-color) 10px 20px
-  );*/
+  );
   color: var(--main-fg-color);
 }
 
