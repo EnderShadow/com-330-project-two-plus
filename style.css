@@ -141,6 +141,10 @@ img {
   margin-right: 20px;
 }
 
+#about-me p {
+  background-color: var(--tertiary-bg-color);
+  padding: 0.666em;
+}
 
 .photo {
   margin-left: auto;
@@ -209,8 +213,35 @@ img {
   max-width: 30em;
 }
 
+#resume #education p {
+  background-color: var(--tertiary-bg-color);
+  padding: 0.666em;
+  margin-top: 0.666em;
+}
+
+#resume div {
+  display: inline-block;
+  background-color: var(--tertiary-bg-color);
+  padding: 0.666em;
+  margin-top: 0.666em;
+  margin-bottom: 0.666em;
+}
+
+#resume #skills ul {
+  display: inline-block;
+  background-color: var(--tertiary-bg-color);
+  padding: 0.666em;
+  margin-top: 0.666em;
+}
+
 #resume h4 {
   font-style: italic;
+}
+
+#contact ul {
+  display: inline-block;
+  background-color: var(--tertiary-bg-color);
+  padding: 0.666em;
 }
 
 #contact-page footer img {
