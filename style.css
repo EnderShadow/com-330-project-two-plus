@@ -190,6 +190,7 @@ img {
 
 #resume article p {
   text-indent: 2em;
+  max-width: 30em;
 }
 
 #resume h4 {
