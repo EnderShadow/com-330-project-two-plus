@@ -180,6 +180,22 @@ img {
   color: #03d3fc;
 }
 
+#resume article {
+  margin-bottom: 1.222em;
+}
+
+#resume article:last-child {
+  margin-bottom: 0em;
+}
+
+#resume article p {
+  text-indent: 2em;
+}
+
+#resume h4 {
+  font-style: italic;
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body { position: relative; }
 
