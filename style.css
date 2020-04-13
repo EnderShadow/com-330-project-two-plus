@@ -220,12 +220,8 @@ img {
   margin-top: 0.666em;
 }
 
-#resume #experience {
-  display: grid;
-  grid-template-columns: minmax(auto, max-content);
-}
-
 #resume div {
+  display: inline-block;
   background-color: var(--text-box-bg-color);
   padding: 0.666em;
   margin-top: 0.666em;
