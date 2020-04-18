@@ -200,6 +200,17 @@ img {
   margin-bottom: 0;
 }
 
+#resume ul {
+  display: inline-block;
+  background-color: var(--text-box-bg-color);
+  padding: 0.666em;
+  margin-top: 0.666em;
+}
+
+#resume h4 {
+  font-style: italic;
+}
+
 #resume article {
   margin-bottom: 1.222em;
 }
@@ -216,17 +227,6 @@ img {
   background-color: var(--text-box-bg-color);
   padding: 0.666em;
   margin-top: 0.666em;
-}
-
-#resume ul {
-  display: inline-block;
-  background-color: var(--text-box-bg-color);
-  padding: 0.666em;
-  margin-top: 0.666em;
-}
-
-#resume h4 {
-  font-style: italic;
 }
 
 #contact ul {
