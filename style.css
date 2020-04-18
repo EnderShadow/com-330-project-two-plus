@@ -209,13 +209,11 @@ img {
 }
 
 #resume article p {
-  text-indent: 2em;
   max-width: 30em;
 }
 
 #resume #education p {
   background-color: var(--text-box-bg-color);
-  text-indent: 0;
   padding: 0.666em;
   margin-top: 0.666em;
 }
