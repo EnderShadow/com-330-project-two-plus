@@ -27,8 +27,8 @@ body {
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
     -45deg,
-    var(--main-bg-color) 0 10px,
-    var(--secondary-bg-color) 10px 20px
+    var(--main-bg-color) 0 20px,
+    var(--secondary-bg-color) 20px 40px
   );
   color: var(--main-fg-color);
 }
