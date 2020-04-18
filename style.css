@@ -144,6 +144,7 @@ img {
 #about-me p {
   background-color: var(--text-box-bg-color);
   padding: 0.666em;
+  max-width: 30em;
 }
 
 .photo {
