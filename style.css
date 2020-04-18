@@ -136,7 +136,6 @@ img {
   flex: 1 0 26%;
 }
 
-
 #about-me figure {
   /* used instead of column-gap in #about-me due to lack of support in most browsers */
   margin-right: 20px;
@@ -216,18 +215,12 @@ img {
 
 #resume #education p {
   background-color: var(--text-box-bg-color);
+  text-indent: 0;
   padding: 0.666em;
   margin-top: 0.666em;
 }
 
-#resume div {
-  display: inline-block;
-  background-color: var(--text-box-bg-color);
-  padding: 0.666em;
-  margin-top: 0.666em;
-}
-
-#resume #skills ul {
+#resume ul {
   display: inline-block;
   background-color: var(--text-box-bg-color);
   padding: 0.666em;
