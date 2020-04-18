@@ -207,6 +207,23 @@ img {
   margin-top: 0.666em;
 }
 
+@supports(display: grid) {
+  #resume #skills ul {
+    display: grid;
+    /* change the 5em if the largest item in the skills area changes */
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    background-color: inherit;
+    padding: 0;
+    grid-gap: 1rem 1rem;
+    max-width: 31.222em; /* 30em + left and right padding of `article p` and/or `ul` */
+  }
+  
+  #resume #skills li {
+    background-color: var(--text-box-bg-color);
+    padding: 0.666em;
+  }
+}
+
 #resume h4 {
   font-style: italic;
 }
