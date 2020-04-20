@@ -18,8 +18,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18px / 16px */
-  line-height: 1.222em; /* 22px / 18px */
-  padding: 1.222em 1.8333em; /* 22px / 18px and 150% of that */
+  line-height: 1.222222222em; /* 22px / 18px */
+  padding: 1.222222222em 1.8333333333em; /* 22px / 18px and 150% of that */
   min-height: 100%; /* Fixes repeating background issue on short pages on large screens */
 }
 
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   line-height: 0;
   padding: 1em;
-  margin-bottom: 0.222em;
+  margin-bottom: 0.222222222em;
 }
 
 .nav a:hover, .nav a:active, .nav a:focus {
@@ -52,8 +52,8 @@ body {
   .nav {
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 0.666em;
-    margin-left: -0.181em;
+    margin-bottom: 0.666666666em;
+    margin-left: -0.181818181em;
   }
 
   .nav li {
@@ -62,9 +62,9 @@ body {
 
   .nav a {
     line-height: inherit;
-    padding: 0.6111em;
+    padding: 0.6111111111em;
     margin-bottom: 0;
-    margin-left: 0.181em;
+    margin-left: 0.181818181em;
   }
 }
 
@@ -72,10 +72,10 @@ body {
   .nav {
     display: grid;
     /* Must change the first argument of minmax to fit largest item */
-    grid-template-columns: repeat(auto-fit, minmax(5.555em, 1fr));
-    grid-gap: 0.222em 0.222em;
+    grid-template-columns: repeat(auto-fit, minmax(5.555555555em, 1fr));
+    grid-gap: 0.222222222em 0.222222222em;
     margin-left: 0;
-    margin-bottom: 1.222em;
+    margin-bottom: 1.222222222em;
   }
 
   .nav a {
@@ -89,25 +89,25 @@ body {
 
 header {
   text-align: center;
-  padding-bottom: 0.334em; /* 18px / 18px */
+  padding-bottom: 0.333333333em; /* 6px / 18px */
 }
 
 h1 {
   font-weight: bold;
-  font-size: 2.22222222em; /* 40px / 18px */
+  font-size: 2.222222222em; /* 40px / 18px */
   line-height: 1em; /* 27px / 27px */
 }
 
 .tagline {
   font-size: 1.5em; /* 27px / 18px */
   line-height: 1em; /* 27px / 27px */
-  padding-bottom: 0.666em;
+  padding-bottom: 0.666666666em;
 }
 
 h2 {
   font-size: 1.5em; /* 27px / 18px */
   line-height: 1em; /* 27px / 27px */
-  padding-bottom: 0.666em;
+  padding-bottom: 0.666666666em;
 }
 
 h3 {
@@ -115,7 +115,7 @@ h3 {
 }
 
 p {
-  margin-bottom: 1.222em; /* 22px / 18px */
+  margin-bottom: 1.222222222em; /* 22px / 18px */
 }
 
 p:last-child {
@@ -140,7 +140,7 @@ img {
 
 #about-me figure {
   width: 100%;
-  max-width: 22.222em;
+  max-width: 22.222222222em;
 }
 
 #about-me section {
@@ -168,14 +168,14 @@ img {
 
 #about-me p {
   background-color: var(--text-box-bg-color);
-  padding: 0.666em;
+  padding: 0.666666666em;
   max-width: 30em;
 }
 
 .photo {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.222em /* 22px / 18px */
+  margin-bottom: 1.222222222em /* 22px / 18px */
 }
 
 .project-img {
@@ -187,21 +187,21 @@ img {
 #projects div {
   display: grid;
   /* initial minimum width of project cards for 200px screens */
-  grid-template-columns: repeat(auto-fit, minmax(5.555em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5.555555555em, 1fr));
   grid-gap: 1rem 1rem;
 }
 
-@media only screen and (min-width: 15.555em) {
+@media only screen and (min-width: 15.555555555em) {
   #projects div {
     /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
-    grid-template-columns: repeat(auto-fit, minmax(11.111em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11.111111111em, 1fr));
   }
 }
 
-@media only screen and (min-width: 20.555em) {
+@media only screen and (min-width: 20.555555555em) {
   #projects div {
     /* final minimum width of project cards for 370px+ screens */
-    grid-template-columns: repeat(auto-fit, minmax(16.666em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16.666666666em, 1fr));
   }
 }
 
@@ -210,7 +210,7 @@ img {
   color: var(--main-fg-color);
   background: var(--link-box-bg-color);
   text-decoration: none;
-  padding: 0.6111em;
+  padding: 0.6111111111em;
 }
 
 #projects a:hover, #projects a:active, #projects a:focus {
@@ -219,7 +219,7 @@ img {
 
 #projects a h4 {
   text-align: center;
-  padding-bottom: 0.6111em;
+  padding-bottom: 0.6111111111em;
 }
 
 #projects a p {
@@ -229,8 +229,8 @@ img {
 #resume ul {
   display: inline-block;
   background-color: var(--text-box-bg-color);
-  padding: 0.666em;
-  margin-top: 0.666em;
+  padding: 0.666666666em;
+  margin-top: 0.666666666em;
 }
 
 @supports(display: grid) {
@@ -241,12 +241,12 @@ img {
     background-color: inherit;
     padding: 0;
     grid-gap: 1rem 1rem;
-    max-width: 31.222em; /* 30em + left and right padding of `article p` and/or `ul` */
+    max-width: 31.222222222em; /* 30em + left and right padding of `article p` and/or `ul` */
   }
   
   #resume #skills li {
     background-color: var(--text-box-bg-color);
-    padding: 0.666em;
+    padding: 0.666666666em;
   }
 }
 
@@ -255,7 +255,7 @@ img {
 }
 
 #resume article {
-  margin-bottom: 1.222em;
+  margin-bottom: 1.222222222em;
 }
 
 #resume article:last-child {
@@ -268,14 +268,14 @@ img {
 
 #resume #education p {
   background-color: var(--text-box-bg-color);
-  padding: 0.666em;
-  margin-top: 0.666em;
+  padding: 0.666666666em;
+  margin-top: 0.666666666em;
 }
 
 #contact ul {
   display: inline-block;
   background-color: var(--text-box-bg-color);
-  padding: 0.666em;
+  padding: 0.666666666em;
 }
 
 #contact-page footer img {
@@ -288,8 +288,8 @@ img {
   display: inline-block;
   color: var(--main-fg-color);
   text-decoration: none;
-  margin-top: 0.666em;
-  margin-right: 0.666em;
+  margin-top: 0.666666666em;
+  margin-right: 0.666666666em;
 }
 
 #contact-page footer a:last {
