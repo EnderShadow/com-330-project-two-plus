@@ -241,11 +241,26 @@ img {
   margin-bottom: 0;
 }
 
+#resume h2, #resume h3, #resume h4, #resume #experience, #resume #skills {
+  text-align: center;
+}
+
+#resume #experience p, #resume #skills li {
+  text-align: left;
+}
+
 #resume ul {
   display: inline-block;
   background-color: var(--text-box-bg-color);
   padding: 0.666666666em;
   margin-top: 0.666666666em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#resume p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @supports(display: grid) {
