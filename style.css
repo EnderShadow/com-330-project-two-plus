@@ -27,8 +27,8 @@ body {
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
     -45deg,
-    var(--main-bg-color) 0 20px,
-    var(--secondary-bg-color) 20px 40px
+    var(--main-bg-color) 0 1em,
+    var(--secondary-bg-color) 1em 2em
   );
   color: var(--main-fg-color);
 }
@@ -72,7 +72,7 @@ body {
   .nav {
     display: grid;
     /* Must change the first argument of minmax to fit largest item */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(5.555em, 1fr));
     grid-gap: 0.222em 0.222em;
     margin-left: 0;
     margin-bottom: 1.222em;
@@ -127,27 +127,27 @@ img {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 39em) {
   #about-me {
     display: flex;
     flex-flow: row wrap;
   }
 
   #about-me figure {
-    margin-right: 20px;
+    margin-right: 1em;
   }
 }
 
 #about-me figure {
   width: 100%;
-  max-width: 400px;
+  max-width: 22.222em;
 }
 
 #about-me section {
   flex: 1 0 26%;
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 58em) {
   #about-me section {
     display: grid;
     grid-template-columns: auto auto;
@@ -187,21 +187,21 @@ img {
 #projects div {
   display: grid;
   /* initial minimum width of project cards for 200px screens */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5.555em, 1fr));
   grid-gap: 1rem 1rem;
 }
 
-@media only screen and (min-width: 280px) {
+@media only screen and (min-width: 15.555em) {
   #projects div {
     /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11.111em, 1fr));
   }
 }
 
-@media only screen and (min-width: 370px) {
+@media only screen and (min-width: 20.555em) {
   #projects div {
     /* final minimum width of project cards for 370px+ screens */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16.666em, 1fr));
   }
 }
 
