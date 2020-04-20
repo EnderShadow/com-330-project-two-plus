@@ -173,13 +173,40 @@ img {
   }
 }
 
-@media only screen and (min-width: 55em) {
-  #about-me div {
-    grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+@supports(display: grid) {
+  @media only screen and (min-width: 39em) {
+    #about-me div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15em, auto));
+      grid-gap: 1rem 1rem;
+      justify-content: start;
+      align-content: start;
+    }
+
+    #about-me figure {
+      align-self: start;
+      justify-self: center;
+    }
+
+    #about-me p {
+      margin-bottom: 0;
+    }
+
+    #about-me .photo {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
 
-  #about-me figure {
-    align-self: center;
+  @media only screen and (min-width: 55em) {
+    #about-me div {
+      grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+    }
+
+    #about-me figure {
+      align-self: center;
+    }
   }
 }
 
