@@ -166,7 +166,7 @@ img {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(15em, auto));
       grid-gap: 1rem 1rem;
-      justify-content: start;
+      justify-content: center;
       align-content: start;
     }
 
