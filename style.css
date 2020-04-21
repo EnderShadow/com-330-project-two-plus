@@ -47,6 +47,10 @@ body {
   background: var(--hover-color);
 }
 
+#about-page #nav-about, #projects-page #nav-projects, #resume-page #nav-resume, #contact-page #nav-contact {
+  background: var(--hover-color);
+}
+
 /* Must change min-width to fit all elements */
 @media only screen and (min-width: 25em) {
   .nav {
