@@ -334,6 +334,28 @@ img {
   opacity: 0.6;
 }
 
+#pnf-404 {
+  text-align: center;
+}
+
+#pnf-404 h2 {
+  margin-top: 1.5em;
+}
+
+@media only screen and (min-width: 17em) {
+  #pnf-404 {
+    font-size: 150%;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  #pnf-404 {
+    font-size: 200%;
+    line-height: 200%;
+  }
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body { position: relative; }
 
