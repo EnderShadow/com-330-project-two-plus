@@ -31,8 +31,10 @@ body {
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
     90deg,
-    var(--main-bg-color) 0 1em,
-    var(--secondary-bg-color) 1em 2em
+    var(--main-bg-color) 0,
+    var(--main-bg-color) 1em,
+    var(--secondary-bg-color) 1em,
+    var(--secondary-bg-color) 2em
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
