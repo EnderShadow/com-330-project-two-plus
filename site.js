@@ -5,3 +5,16 @@ window.addEventListener('keyup', function(e) {
     document.querySelector('html').classList.toggle('g');
   }
 })
+
+if(document.querySelector('body').offsetHeight < window.innerHeight) {
+	document.querySelector('footer').style = "position: absolute; bottom: 0; width: 100%;"
+}
+
+window.addEventListener('resize', function(e) {
+	if(document.querySelector('body').offsetHeight < window.innerHeight) {
+		document.querySelector('footer').style = "position: absolute; bottom: 0; width: 100%;"
+	}
+	else {
+		document.querySelector('footer').style = ""
+	}
+})
