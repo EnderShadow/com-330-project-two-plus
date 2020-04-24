@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
-    135deg,
+    90deg,
     var(--main-bg-color) 0 1em,
     var(--secondary-bg-color) 1em 2em
   );
