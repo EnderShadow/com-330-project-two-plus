@@ -17,24 +17,36 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 html {
+  box-sizing: border-box;
   font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18px / 16px */
   line-height: 1.222222222em; /* 22px / 18px */
+  height: 100%;
   min-height: 100%; /* Fixes repeating background issue on short pages on large screens */
+  padding-top: 1.222222222em;
+}
+
+header, footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
     135deg,
     var(--main-bg-color) 0 1em,
     var(--secondary-bg-color) 1em 2em
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--main-fg-color);
-}
-
-body {
-  padding-top: 1.222222222em;
+  height: 100%;
 }
 
 body > * {
