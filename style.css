@@ -315,9 +315,14 @@ img {
   }
 }
 
+#contact {
+  text-align: center;
+}
+
 #contact ul {
   display: inline-block;
   background-color: var(--text-box-bg-color);
+  text-align: left;
   padding: 0.666666666em;
 }
 
