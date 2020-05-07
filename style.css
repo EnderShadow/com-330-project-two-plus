@@ -179,6 +179,7 @@ img {
     }
 
     #about-me figure {
+      max-width: 16em;
       align-self: start;
       justify-self: center;
     }
