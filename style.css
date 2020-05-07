@@ -17,17 +17,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 html {
-  box-sizing: border-box;
   font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18px / 16px */
   line-height: 1.222222222em; /* 22px / 18px */
-  height: 100%;
+  min-height: 100%; /* Fixes repeating background issue on short pages on large screens */
   padding-top: 1.222222222em;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: var(--main-bg-color);
   background: repeating-linear-gradient(
     135deg,
@@ -37,20 +34,11 @@ body {
     var(--secondary-bg-color) 2em
   );
   color: var(--main-fg-color);
-  height: 100%;
 }
 
 body > * {
   padding-left: 1.8333333333em;
   padding-right: 1.8333333333em;
-}
-
-header, footer {
-  flex: 0 0 auto;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 .nav a {
