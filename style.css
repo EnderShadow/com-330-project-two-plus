@@ -55,7 +55,7 @@ body > * {
   background: var(--hover-color);
 }
 
-#about-page #nav-about, #projects-page #nav-projects, #resume-page #nav-resume, #contact-page #nav-contact {
+#about-page #nav-about, #projects-page #nav-projects, #resume-page #nav-resume {
   background: var(--hover-color);
 }
 
@@ -320,21 +320,6 @@ img {
     background-color: var(--text-box-bg-color);
     padding: 0.666666666em;
   }
-}
-
-#contact {
-  text-align: center;
-}
-
-#contact ul {
-  display: inline-block;
-  background-color: var(--text-box-bg-color);
-  text-align: left;
-  padding: 0.666666666em;
-}
-
-#contact a {
-  color: var(--url-color);
 }
 
 #pnf-404 {
