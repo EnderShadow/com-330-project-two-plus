@@ -36,8 +36,6 @@ body {
     var(--secondary-bg-color) 1em,
     var(--secondary-bg-color) 2em
   );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: var(--main-fg-color);
   height: 100%;
 }
