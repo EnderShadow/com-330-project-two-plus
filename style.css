@@ -390,6 +390,14 @@ footer a:hover, footer a:active, footer a:focus {
   opacity: 0.6;
 }
 
+footer p {
+  display: inline;
+}
+
+footer p a {
+  color: var(--url-color);
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body { position: relative; }
 
