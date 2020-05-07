@@ -198,30 +198,15 @@ img {
 }
 
 .project-img {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.333333333em;
+  margin-bottom: 0.333333333em;
 }
 
-#projects div {
-  display: grid;
-  /* initial minimum width of project cards for 200px screens */
-  grid-template-columns: repeat(auto-fit, minmax(5.555555555em, 1fr));
-  grid-gap: 1rem 1rem;
-}
-
-@media only screen and (min-width: 15.555555555em) {
-  #projects div {
-    /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
-    grid-template-columns: repeat(auto-fit, minmax(11.111111111em, 1fr));
-  }
-}
-
-@media only screen and (min-width: 20.555555555em) {
-  #projects div {
-    /* final minimum width of project cards for 370px+ screens */
-    grid-template-columns: repeat(auto-fit, minmax(16.666666666em, 1fr));
-  }
+#projects h2, #projects h3 {
+  text-align: center;
 }
 
 #projects a {
@@ -230,6 +215,10 @@ img {
   background: var(--link-box-bg-color);
   text-decoration: none;
   padding: 0.6111111111em;
+  max-width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }
 
 #projects a:hover, #projects a:active, #projects a:focus {
@@ -243,6 +232,47 @@ img {
 
 #projects a p {
   margin-bottom: 0;
+}
+
+#projects div img {
+  max-height: 50vh;
+  max-width: 60vw;
+}
+
+@supports(display: grid) {
+  #projects a {
+    max-width: initial;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  #projects div img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projects div {
+    display: grid;
+    /* initial minimum width of project cards for 200px screens */
+    grid-template-columns: repeat(auto-fit, minmax(5.555555555em, 1fr));
+    grid-gap: 1rem 1rem;
+  }
+
+  @media only screen and (min-width: 15.555555555em) {
+    #projects div {
+      /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
+      grid-template-columns: repeat(auto-fit, minmax(11.111111111em, 1fr));
+    }
+  }
+
+  @media only screen and (min-width: 20.555555555em) {
+    #projects div {
+      /* final minimum width of project cards for 370px+ screens */
+      grid-template-columns: repeat(auto-fit, minmax(16.666666666em, 1fr));
+    }
+  }
 }
 
 /* Resume Centering CSS Start */
