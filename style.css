@@ -26,13 +26,7 @@ html {
 
 body {
   background-color: var(--main-bg-color);
-  background: repeating-linear-gradient(
-    135deg,
-    var(--main-bg-color) 0,
-    var(--main-bg-color) 1em,
-    var(--secondary-bg-color) 1em,
-    var(--secondary-bg-color) 2em
-  );
+  background-image: url('/assets/background.png');
   color: var(--main-fg-color);
 }
 
