@@ -382,10 +382,13 @@ footer img {
   margin-right: auto;
 }
 
-footer a {
+footer > a {
   display: inline-block;
   color: var(--main-fg-color);
   text-decoration: none;
+}
+
+footer a {
   margin-top: 0.666666666em;
   margin-right: 0.666666666em;
 }
