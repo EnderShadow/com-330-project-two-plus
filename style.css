@@ -195,8 +195,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.333333333em;
-  margin-bottom: 0.333333333em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #projects h2, #projects h3 {
@@ -229,7 +229,7 @@ img {
 }
 
 #projects div img {
-  max-height: 50vh;
+  max-height: 60vh;
   max-width: 60vw;
 }
 
@@ -250,18 +250,18 @@ img {
   #projects div {
     display: grid;
     /* initial minimum width of project cards for 200px screens */
-    grid-template-columns: repeat(auto-fit, minmax(5.555555555em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(5.5em, 1fr));
     grid-gap: 1rem 1rem;
   }
 
-  @media only screen and (min-width: 15.555555555em) {
+  @media only screen and (min-width: 16.5em) {
     #projects div {
       /* intermediate minimum width of project cards for 280px screens to prevent new columns before final minimum size is reached */
       grid-template-columns: repeat(auto-fit, minmax(11.111111111em, 1fr));
     }
   }
 
-  @media only screen and (min-width: 20.555555555em) {
+  @media only screen and (min-width: 23em) {
     #projects div {
       /* final minimum width of project cards for 370px+ screens */
       grid-template-columns: repeat(auto-fit, minmax(16.666666666em, 1fr));
