@@ -25,14 +25,21 @@ html {
 }
 
 body {
+  display: flex;
   background-color: var(--main-bg-color);
   background-image: url('/assets/background.png');
   color: var(--main-fg-color);
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 body > * {
   padding-left: 1.8333333333em;
   padding-right: 1.8333333333em;
+}
+
+main {
+  flex: 1;
 }
 
 .nav a {
