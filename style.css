@@ -332,7 +332,7 @@ img {
   #resume #skills ul {
     display: grid;
     /* change the 5em if the largest item in the skills area changes */
-    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     background-color: inherit;
     padding: 0;
     grid-gap: 1rem 1rem;
